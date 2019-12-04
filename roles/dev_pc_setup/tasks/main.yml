@@ -1,0 +1,47 @@
+---
+### The dev version builds upon casual version.
+
+## text editors
+- name: Install the sublime text flatpak
+  flatpak:
+    name: com.sublimetext.three
+    state: present
+
+- name: Install the visual studio code flatpak
+  flatpak:
+    name: com.visualstudio.code
+    state: present
+
+- name: Install the atom editor flatpak
+  flatpak:
+    name: io.atom.Atom
+    state: present
+
+- name: install nano editor
+  dnf:
+    name: nano
+    state: present
+
+## ide's
+
+- name: Install the android studio flatpak
+  flatpak:
+    name: com.google.AndroidStudio
+    state: present
+
+- name: Install the pycharm community flatpak
+  flatpak:
+    name: com.jetbrains.PyCharm-Community
+    state: present
+
+- name: Install the eclipse for java development flatpak
+  flatpak:
+    name: org.eclipse.Java
+    state: present
+    
+## Compilers
+
+- name: install java 11 jdk
+  dnf:
+    name: java-11-openjdk.x86_64
+    state: present

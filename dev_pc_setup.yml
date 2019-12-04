@@ -1,0 +1,6 @@
+- hosts: localhost
+  roles:
+    - common_start
+    - casual_pc_setup
+    - dev_pc_setup
+    - common_finish

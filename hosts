@@ -1,0 +1,7 @@
+# Add your own groups here. Hosts can be added to multiple groups like so:
+# [anothergroup]
+# server[1:3]
+# anotherserver     ansible_host=192.168.0.10
+
+[all]
+this_pc = localhost

@@ -1,0 +1,25 @@
+---
+
+# install nescessary tools
+
+- name: upgrade all packages
+  dnf:
+    name: "*"
+    state: latest
+
+# dnf installs
+- name: install thunderbird
+  dnf:
+    name: thunderbird
+    state: present
+
+- name: install chromium
+  dnf:
+    name: chromium
+    state: present
+
+- name: install keepassxc
+  dnf:
+    name: keepassxc
+    state: present
+

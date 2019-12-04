@@ -1,0 +1,13 @@
+---
+- name: upgrade all packages
+  dnf:
+    name: "*"
+    state: latest
+
+- name: install gnome tweaks
+  dnf:
+    name: gnome-tweak-tool
+    state: latest
+
+- name: Enable Flathub repository
+  command: flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
