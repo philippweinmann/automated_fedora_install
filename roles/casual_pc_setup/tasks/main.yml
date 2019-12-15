@@ -1,17 +1,11 @@
 ---
 
-# install nescessary tools
+# dnf installs
 
 - name: upgrade all packages
   dnf:
     name: "*"
     state: latest
-
-# dnf installs
-- name: install thunderbird
-  dnf:
-    name: thunderbird
-    state: present
 
 - name: install chromium
   dnf:
@@ -23,3 +17,9 @@
     name: keepassxc
     state: present
 
+# flatpack installs
+
+- name: install evolution from flathub
+  flatpak:
+    name: org.gnome.Evolution
+    state: present

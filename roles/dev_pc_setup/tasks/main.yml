@@ -45,3 +45,21 @@
   dnf:
     name: java-11-openjdk.x86_64
     state: present
+
+## Other
+
+- name: install official repo group development tools
+  dnf:
+    name: "@Development Tools"
+    state: present
+
+- name: show hidden files in nautilus
+  dconf:
+    key: "show-hidden"
+    value: "true"
+    state: present
+
+  dconf:
+    key: "show-hidden-files"
+    value: "true"
+    state: present
